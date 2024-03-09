@@ -1,3 +1,8 @@
+#files we want to ignore for the typical surlab repo
+config.py 
+#we don't want to commit changes every time we modify the config, only when we update the default config
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

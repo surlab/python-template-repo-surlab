@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+eval "$(conda shell.bash hook)"
+pwd
+ABSOLUTE_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/$(basename "${BASH_SOURCE[0]}")"
+echo "Script is found at $ABSOLUTE_PATH"
+DIRPATH=$(cd `dirname "${BASH_SOURCE[0]}"` && pwd)
+echo "Moving to directory $DIRPATH/scripts"
+cd "/Users/greggoryheller/Dropbox (MIT)/gregg_code/replace_with_env_name"
+echo "Now in "&& pwd
+eval "$(conda shell.bash hook)"
+conda activate replace_with_env_name
+conda info --envs
+jupyter notebook

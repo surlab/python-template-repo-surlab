@@ -1,0 +1,12 @@
+#!/usr/bin/env bash --init-file
+pwd
+GIT=`which git`
+ABSOLUTE_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/$(basename "${BASH_SOURCE[0]}")"
+echo "Script is found at $ABSOLUTE_PATH"
+DIRPATH=$(cd `dirname "${BASH_SOURCE[0]}"` && pwd)
+echo "Moving to directory $DIRPATH"
+cd "$DIRPATH"
+echo "Now in "&& pwd
+${GIT} add --all .
+${GIT} commit -m "WIP: unstable code committed and pushed by shortcult script"
+${GIT} push
