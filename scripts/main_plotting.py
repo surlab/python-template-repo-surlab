@@ -2,7 +2,6 @@ from src import plotting as plot
 from src import config as cfg
 import os
 import pandas as pd
-
 def main_plotting_loop():
     for filename in os.listdir(cfg.collect_summary_at_path):
         if 'simulation_mean_stim_response' in filename:
@@ -19,6 +18,5 @@ def main_plotting_loop():
             fullpath = os.path.join(cfg.collect_summary_at_path, filename)
             df = pd.read_csv(fullpath, index_col=0)
             plot.plot_all_simulation_scores(df)
-
 if __name__ == "__main__":
     main_plotting_loop()

@@ -5,8 +5,8 @@ ABSOLUTE_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/$(basename "${BASH_
 echo "Script is found at $ABSOLUTE_PATH"
 DIRPATH=$(cd `dirname "${BASH_SOURCE[0]}"` && pwd)
 echo "Moving to directory $DIRPATH"
-cd "/Users/greggoryheller/Dropbox (MIT)/gregg_code/replace_with_env_name"
+cd "/Users/greggoryheller/Dropbox (MIT)/gregg_code/replace_with_env_name2"
 echo "Now in "&& pwd
 eval "$(conda shell.bash hook)"
-conda activate replace_with_env_name
+conda activate replace_with_env_name2
 conda info --envs
