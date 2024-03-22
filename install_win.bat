@@ -7,3 +7,5 @@ REM comment: 2. It also sets up "src" so they dynamically update when called by 
 
 conda env create -f environment_cross_platform.yml
 call conda info --envs
+call pip install -e .
+
