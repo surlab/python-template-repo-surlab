@@ -8,5 +8,5 @@ echo "Moving to directory $DIRPATH"
 cd "$DIRPATH"
 echo "Now in "&& pwd
 ${GIT} add --all .
-${GIT} commit -m "WIP: unstable code committed and pushed by shortcult script"
+${GIT} commit -m "WIP: unstable code committed and pushed by shortcut script"
 ${GIT} push

@@ -12,7 +12,7 @@ These instructions require:
 cd ..\documents\code #or similar as relevant for your machine
 git clone git@github.com:surlab/replace_with_env_name.git
 ```
-2. Double click the file "install_win.bat" to run it. This should set up the conda environment and all dependencies. 
+2. Double click the file "user_install_win.bat" to run it. This should set up the conda environment and all dependencies. 
 #### OR For a windows or non -indows machine
 Open a teriman and run the following commands
 ```bash
@@ -21,6 +21,7 @@ git clone git@github.com:surlab/replace_with_env_name.git
 cd replace_with_env_name
 conda env create -f environment_cross_platform.yml
 Conda activate replace_with_env_name
+call pip install -e .
 ```
 The installation should now be complete and the replace_with_env_name conda environment should still be activated. 
 ## Usage instructions

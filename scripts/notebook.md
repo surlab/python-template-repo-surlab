@@ -13,7 +13,7 @@ jupyter:
     name: python3
 ---
 <!-- #region colab_type="text" id="view-in-github" -->
-<a href="https://colab.research.google.com/github/GreggHeller1/replace_with_env_name2/blob/main/scripts/notebook.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+<a href="https://colab.research.google.com/github/GreggHeller1/replace_with_env_name/blob/main/scripts/notebook.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 <!-- #endregion -->
 ```python id="71ee021b"
 #settings
@@ -29,13 +29,13 @@ print(in_colab)
 ```python colab={"base_uri": "https://localhost:8080/"} id="4e02e926" outputId="84475a29-508b-4d96-adf5-e85665e994d2"
 #installs (for colab only, run this once)
 if in_colab:
-    ! git clone https://github.com/GreggHeller1/replace_with_env_name2.git
+    ! git clone https://github.com/GreggHeller1/replace_with_env_name.git
 ```
 ```python id="5e9731ca"
 #local imports
 #cwd if in colab for imports to work
 if in_colab:
-    %cd /content/replace_with_env_name2
+    %cd /content/replace_with_env_name
     
 from src import data_io as io
 from src import plotting as plot
@@ -62,14 +62,14 @@ import os
 #define paths
 #cwd if in colab for file loading to work
 if in_colab:
-    %cd /content/replace_with_env_name2/scripts
+    %cd /content/replace_with_env_name/scripts
     
 test_path = os.path.join('demo_data', 'test.txt')
 print(test_path)
 print(os.getcwd())
 print(os.path.exists(test_path))
-soma_path = "/Users/Gregg/code/replace_with_env_name2/scripts/demo_data/ASC26_cell_3_soma.mat"
-spines_path = "/Users/Gregg/code/replace_with_env_name2/scripts/demo_data/ASC26_cell_3_spines.mat"
+soma_path = "/Users/Gregg/code/replace_with_env_name/scripts/demo_data/ASC26_cell_3_soma.mat"
+spines_path = "/Users/Gregg/code/replace_with_env_name/scripts/demo_data/ASC26_cell_3_spines.mat"
 spines_path = "/Users/Gregg/Dropbox (MIT)/2021 Gregg Sur rotation/ASC_experimental_data/2022-11 Soma Data/ASC15.mat"
 print(os.path.exists(soma_path))
 print(os.path.exists(spines_path))

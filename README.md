@@ -8,5 +8,5 @@ Following these instructions will create a new repo with appropriate directory s
 If this works, you are good to go. Otherwise you need to install anaconda or add it to your windows path. See answer here by "Simba" https://stackoverflow.com/questions/44597662/conda-command-is-not-recognized-on-windows-10
 1. Follow the instructions here to create a repository from this template: https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template
 1. Clone the newly created repository to a windows (10?) machine
-1. Double click the file "install_win" or "install_win.bat" to run it. This will ask for text string nae of the newly created repository, and will use this to replace any instance of "replace_with_env_name" found in the contained text documents. 
+1. Double click the file "dev_install_win" or "dev_install_win.bat" to run it. This will ask for text string nae of the newly created repository, and will use this to replace any instance of "replace_with_env_name" found in the contained text documents. 
 1. Thats it!
