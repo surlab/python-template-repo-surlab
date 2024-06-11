@@ -16,7 +16,7 @@ call "create_new_env_win.bat"
 del "README.md"
 ren "template_readme.md" README.md
 del ".\developer_scriptsreplace_repo_name_in_text.bat"
-call ".\developer_scriptssimple_WIP_commit_push.bat"
+call ".\developer_scripts\simple_WIP_commit_push.bat"
 timeout 5
 cd ..
 del dev_install_win.bat
