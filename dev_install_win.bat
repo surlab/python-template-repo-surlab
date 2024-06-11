@@ -9,21 +9,21 @@ REM comment: 4. It deletes all files that are no longer necessary for subsequent
 REM comment: 5 it uses one of the developer scripts to commit and push the changes
 REM comment: 6 It attempts to delete itself but seems to fail no matter what I do...
 
-call "developer_scripts\replace_repo_name_in_text.bat"
+call ".\developer_scripts\replace_repo_name_in_text.bat"
 
 REM comment: This is here because for some reason this script skips 2 characters after the preceeding call... what a mystery
 timeout 5
 
-call "developer_scripts\create_env_win.bat"
+call ".\developer_scripts\create_env_win.bat"
 
 del "README.md"
 ren "template_readme.md" README.md
-del "developer_scripts\replace_repo_name_in_text.bat"
-call "developer_scripts\simple_WIP_commit_push.bat"
+del ".\developer_scripts\replace_repo_name_in_text.bat"
+call ".\developer_scripts\simple_WIP_commit_push.bat"
 
 timeout 5
 
 del dev_install_win.bat
-call "developer_scripts\simple_WIP_commit_push.bat"
+call ".\developer_scripts\simple_WIP_commit_push.bat"
 
 
