@@ -14,7 +14,7 @@ call ".\developer_scripts\replace_repo_name_in_text.bat"
 REM comment: This is here because for some reason this script skips 2 characters after the preceeding call... what a mystery
 timeout 5
 
-call ".\developer_scripts\create_env_win.bat"
+call ".\developer_scripts\create_new_env_win.bat"
 
 del "README.md"
 ren "template_readme.md" README.md
