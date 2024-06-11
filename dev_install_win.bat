@@ -13,11 +13,12 @@ REM comment: This is here because for some reason this script skips 2 characters
 timeout 5
 cd developer_scripts
 call "create_new_env_win.bat"
+REM comment: ^^ This script CDs back to the root
+
 del "README.md"
 ren "template_readme.md" README.md
-del ".\developer_scriptsreplace_repo_name_in_text.bat"
-call ".\developer_scripts\simple_WIP_commit_push.bat"
+
+del ".\developer_scripts\replace_repo_name_in_text.bat"
+call ".\developer_scripts\simple_WIP_commit_push_close.bat"
 timeout 5
-cd ..
 del dev_install_win.bat
-call ".\developer_scripts\simple_WIP_commit_push.bat"
