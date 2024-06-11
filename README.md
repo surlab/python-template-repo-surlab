@@ -4,9 +4,7 @@ Following these instructions will create a new repo with appropriate directory s
 ####Instructions
 1. Update the python version if necessary. Currently, following these instructions will set up a conda environment using python 3.8 If this is out of date, the environment_cross_platform.yml in THIS template repo should be updated (both remote and local) to reflect the current version before proceeding. (Please also update this step in this readme as well.)
 1. Make sure conda is in your windows path (you can check this by opening a new command prompt (search CMD) and entering the following command
-
         >>>conda info --envs
-
     If this works, you are good to go. Otherwise you need to install anaconda or add it to your windows path. See answer here by "Simba" https://stackoverflow.com/questions/44597662/conda-command-is-not-recognized-on-windows-10
 1. Follow the instructions here to create a repository from this template: https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template
 1. Clone the newly created repository to a windows (10?) machine

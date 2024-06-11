@@ -72,6 +72,7 @@ def save_csv(df, name_keywords=''):
     df_path = os.path.join(cfg.collect_summary_at_path, dfname)
     print(f'Saving dataframe to {df_path}')
     df.to_csv(df_path)
+    
 def save_plot(fig, current_data_dir):
     # save it local with the other data
     file_name = "annotated_dendrite.svg"

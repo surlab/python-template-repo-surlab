@@ -6,7 +6,7 @@ REM comment: 	and replaces with the string "env_name" that is entered by the use
 REM comment: It is important that this is done FIRST so that create_env creates the right environment name
 @echo off 
 setlocal EnableExtensions DisableDelayedExpansion
-set "search=replace_with_env_name"
+set "search=activate replace_with_env_name"
 set /p replace=Please enter the name of the repository (exactly, no spaces):
 set "textFile=*.*"
 REM comment: Need to replace in .bat, yml, .md, .py and .ipynb files, hopefully this gets all of them and doesn't have any issues...
