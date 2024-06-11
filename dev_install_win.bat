@@ -14,15 +14,17 @@ call ".\developer_scripts\replace_repo_name_in_text.bat"
 REM comment: This is here because for some reason this script skips 2 characters after the preceeding call... what a mystery
 timeout 5
 
-call ".\developer_scripts\create_new_env_win.bat"
+cd developer_scripts
+call "create_new_env_win.bat"
 
 del "README.md"
 ren "template_readme.md" README.md
-del ".\developer_scripts\replace_repo_name_in_text.bat"
-call ".\developer_scripts\simple_WIP_commit_push.bat"
+del ".\developer_scriptsreplace_repo_name_in_text.bat"
+call ".\developer_scriptssimple_WIP_commit_push.bat"
 
 timeout 5
 
+cd ..
 del dev_install_win.bat
 call ".\developer_scripts\simple_WIP_commit_push.bat"
 
