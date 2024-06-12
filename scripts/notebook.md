@@ -63,10 +63,12 @@ import os
 if in_colab:
     %cd /content/replace_with_env_name/scripts
     
-test_path = os.path.join('demo_data', 'test.txt')
-print(test_path)
 print(os.getcwd())
+base_dir = os.path.split(os.getcwd())[0]
+test_path = os.path.join(base_dir, 'demo_data', 'test.txt')
+print(test_path)
 print(os.path.exists(test_path))
+
 data_path = "your data path here"
 print(os.path.exists(data_path))
 ```

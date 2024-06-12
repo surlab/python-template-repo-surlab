@@ -10,14 +10,14 @@ this can also include functions that are intended to be modified by the end user
 """
 
 
-import numpy as np
+#import numpy as np
 import os 
 
 ################
 # main config
 #################
 
-cfg.data_path = r"root\your\path\here"
+data_path = r"root\your\path\here"
 
 
 
