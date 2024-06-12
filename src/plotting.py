@@ -1,4 +1,7 @@
-"""generic description of this module, plotting.py(plot). please update as you develop
+"""generic description of this module, plotting.py(plot)
+generated automatically on project creation from the surlab python-template-repo. 
+please update this docstring as you develop.
+
 plotting.py should contain functions used for plotting the results of main_computation. 
 This can also include saving of plots, if its more convenient than placing in data_io
 """

@@ -1,4 +1,7 @@
-"""generic description of module config.py(cfg). please update as you develop
+"""generic description of module config.py(cfg).
+generated automatically on project creation from the surlab python-template-repo. 
+please update this docstring as you develop.
+
 config.py should contain parameters that an end user might want to change
 whenever possible, variables that are features of the input data should be inferred, not specified
 so config should contain only what is user system specific or purely a matter of user preference

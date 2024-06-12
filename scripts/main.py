@@ -1,9 +1,14 @@
-"""generic description of this module, main.py(main). please update as you develop
-main.py organizes the functions from the src modules into a useable order allowing end to end operation 
+"""generic description of this module, main.py(main).
+generated automatically on project creation from the surlab python-template-repo. 
+please update this docstring as you develop.
+
+main.py organizes the functions from the src modules into a useable order 
+allowing end to end operation 
 with a single function call 
-Sometimes this includes looping through multiple datasets, aggregating data, etc
-Each of these main_xyz functions should correspond to a block in your demo jupyter notebook 
-with additional explanation
+Sometimes this includes looping through multiple datasets (cells, animals, sessions), aggregating data, etc
+If there are times where you want to make things less modular for speed or resource use
+(e.g. keeping variables in memory when shared across multiple cells) I put those functions here in main
+Each of these main_xyz functions should correspond to a block in your demo jupyter notebook with additional explanation preceeding the cell
 """
 from src import config as cfg
 from src import plotting as plot

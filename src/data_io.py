@@ -1,4 +1,7 @@
-"""generic description of this module, data_io.py(io). please update as you develop
+"""generic description of this module, data_io.py(io).
+generated automatically on project creation from the surlab python-template-repo. 
+please update this docstring as you develop.
+
 data_io.py should contain functions used for loading or saving data.
 """
 from src import config as cfg
